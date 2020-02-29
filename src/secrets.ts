@@ -10,6 +10,7 @@ export const ENVIRONMENT = process.env.NODE_ENV
 const prod = ENVIRONMENT === 'production' // Anything else is treated as 'dev'
 
 export const { SESSION_SECRET } = process.env
+export const { NODE_ENV } = process.env
 export const { MASTER_KEY } = process.env
 export const { APP_ID } = process.env
 export const { SERVER_URL } = process.env

@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "NODE_ENV=development nodemon --inspect src/server.ts",
-    "start": "node-ts  src/server.ts",
+    "start": "NODE_ENV=production yarn build && node  dist/server.js",
     "test": "jest",
     "build": "tsc"
   },

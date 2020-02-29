@@ -3,25 +3,65 @@ import http from 'http'
 import express, { Application } from 'express'
 import { ParseServer } from 'parse-server'
 import ParseDashboard from 'parse-dashboard'
-
+import os from 'os'
 import initClasses from './cloud/models/init'
 import initHooks from './cloud/hooks/init'
 import initTests from './cloud/tests/init'
 
 import { filesAdapter, cacheAdapter } from './adapters'
 
-const [appId, masterKey, serverURL] = [
+const ifaces = os.networkInterfaces()
+
+const [appId, masterKey, serverURL, nodeEnv] = [
   process.env.APP_ID || 'AndrewsApp',
   process.env.MASTER_KEY || 'Asdfasdf1234',
   `http://localhost:${process.env.PORT || 1337}/api`,
+  process.env.NODE_ENV,
 ]
+let extension = '.js'
+if (process.env.NODE_ENV === 'development') {
+  extension = '.ts'
+}
+const myIp = ''
 
+Object.keys(ifaces).forEach(function(ifname) {
+  let alias = 0
+
+  ifaces[ifname].forEach(function(iface) {
+    if (iface.family !== 'IPv4' || iface.internal !== false) {
+      // skip over internal (i.e. 127.0.0.1) and non-ipv4 addresses
+      return
+    }
+
+    if (alias >= 1) {
+      // this single interface has multiple ipv4 addresses
+
+      if (ifname !== 'docker0') {
+        console.log(`${ifname}:${alias}`, iface.address)
+      }
+    } else {
+      // this interface has only one ipv4 adress
+      // if (ifname !== 'docker0') {
+      //   ifname !== 'docker0'
+      // }
+      console.log(`${ifname}:${alias}`, iface.address)
+
+      if (ifname !== 'docker0') {
+        console.log(`${ifname}:${alias}`, iface.address)
+      }
+    }
+    // eslint-disable-next-line no-plusplus
+    ++alias
+  })
+})
+
+console.log(`${process.env.NODE_ENV}`)
 const [app, api, dashboard] = [
   express(),
   new ParseServer({
     databaseURI:
-      `${process.env.DATABASE_URI}/${appId}` || `mongodb://db:27017/${appId}`,
-    cloud: path.join(__dirname, 'cloud', 'main.ts'),
+      `${process.env.DATABASE_URI}/${nodeEnv}` || `mongodb://db:27017/${appId}`,
+    cloud: path.join(__dirname, 'cloud', `main${extension}`),
     appId,
     masterKey,
     serverURL,

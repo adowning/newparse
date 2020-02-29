@@ -1,5 +1,6 @@
 import { RedisCacheAdapter } from 'parse-server'
+import myIp from '../cloud/helpers/ipHelper'
 
-console.log(process.env.REDIS_URL)
 export default (): RedisCacheAdapter =>
-  new RedisCacheAdapter({ url: process.env.REDIS_URL || 'redis://redis' })
+  // new RedisCacheAdapter({ url: process.env.REDIS_URL || 'redis://redis' })
+  new RedisCacheAdapter({ url: `redis://${myIp}:6379` })

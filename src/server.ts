@@ -3,6 +3,8 @@ import dotenv from 'dotenv'
 
 if (process.env.NODE_ENV === 'development') {
   dotenv.config({ path: '.env.dev' })
+} else {
+  dotenv.config({ path: '.env.prod' })
 }
 // eslint-disable-next-line import/first
 import { App, InitClasses } from './app'
