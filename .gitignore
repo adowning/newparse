@@ -4,3 +4,5 @@ dist
 yarn-error.log
 npm-debug.log
 node_modules
+.env.prod
+.env.dev
