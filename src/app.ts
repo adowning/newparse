@@ -6,13 +6,14 @@ import ParseDashboard from 'parse-dashboard'
 import initClasses from './cloud/models/init'
 import initHooks from './cloud/hooks/init'
 import initTests from './cloud/tests/init'
+import myIp from './cloud/helpers/ipHelper'
 
 import { filesAdapter, cacheAdapter } from './adapters'
 
 const [appId, masterKey, serverURL, nodeEnv] = [
   process.env.APP_ID || 'AndrewsApp',
   process.env.MASTER_KEY || 'Asdfasdf1234',
-  `http://localhost:${process.env.PORT || 1337}/api`,
+  `http://${myIp}:${process.env.PORT || 1337}/api`,
   process.env.NODE_ENV,
 ]
 let extension = '.js'
