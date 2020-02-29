@@ -7,7 +7,7 @@ RUN apk update; \
   # apk add python2;
 WORKDIR /tmp
 COPY package*.json ./
-RUN yarn install
+# RUN yarn install
 COPY . .
 RUN yarn build
 
@@ -22,7 +22,7 @@ WORKDIR /parse-server
 
 COPY package*.json ./
 
-RUN yarn install --production --ignore-scripts --silent
+# RUN yarn install --production --ignore-scripts --silent
 
 COPY --from=build /tmp/dist ./
 

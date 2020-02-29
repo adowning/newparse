@@ -1,4 +1,4 @@
-node_modules
+#node_modules
 npm-debug.log
 *.md
 PATENTS
@@ -17,7 +17,7 @@ prettier.config.js
 yarn-error.log
 
 # Dist folder
-dist/
+#dist/
 
 # Tests
 spec/

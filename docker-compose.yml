@@ -24,19 +24,32 @@ services:
       - dbdata:/data/db
     # dns:
     #   - 8.8.8.8
-  server:
-    build: .
-    env_file: .env
+  # server:
+  #   build: .
+  #   env_file: .env
+  #   ports:
+  #     - '1337:1337'
+  #   # dns:
+  #   #   - 8.8.8.8
+  #   depends_on:
+  #     - db
+  #     - minio
+  #     - redis
+  #   # networks:
+  #   #   - myvlan
+  parse-server:
+    image: parseplatform/parse-server
+    container_name: z_parse_server
+    volumes:
+      - './docker/builds/parse/config/:/parse-server/config/'
+      - './dist/cloud/:/parse-server/cloud/'
+      - '/etc/localtime:/etc/localtime:ro'
+    depends_on:
+      - mongo
     ports:
       - '1337:1337'
-    # dns:
-    #   - 8.8.8.8
-    depends_on:
-      - db
-      - minio
-      - redis
-    # networks:
-    #   - myvlan
+    command: /parse-server/config/config.json
+    env_file: './.env'
 
 volumes:
   dbdata: {}
