@@ -20,7 +20,7 @@ if (process.env.NODE_ENV === 'development') {
   extension = '.ts'
 }
 
-console.log(`${process.env.NODE_ENV}`)
+console.log(`${process.env.DATABASE_URI}`)
 const [app, api, dashboard] = [
   express(),
   new ParseServer({
