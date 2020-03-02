@@ -1,7 +1,5 @@
 Parse Server with Parse Dashboard for SGT/DTI-UFCG.
 
-
-
 **Functional resources**
 
 - CRUD for Users/Vehicles/Sectors/Absences/Routes;
@@ -19,7 +17,7 @@ Parse Server with Parse Dashboard for SGT/DTI-UFCG.
 
 **Business rules**
 
-- Create Cloud Code to prevent unauthorised users make change on models;
+- Create Cloud Code to prevent unauthorised users make change on mod  els;
 - Designate route to specific driver based on specific rules.
 
   ***Depends on:***
