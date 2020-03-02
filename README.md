@@ -1,6 +1,6 @@
 Parse Server with Parse Dashboard for SGT/DTI-UFCG.
 
---------
+
 
 **Functional resources**
 
