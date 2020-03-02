@@ -10,3 +10,192 @@
 {"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T07:00:06.411Z"}
 {"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T07:06:01.786Z"}
 {"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T07:06:01.848Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T08:14:10.784Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T08:14:11.443Z"}
+{"className":"_User","triggerType":"afterSave","level":"info","message":"afterSave triggered for _User for user undefined:\n  Input: {\"username\":\"test-1582964052134\",\"firstName\":\"test\",\"lastName\":\"test\",\"ACL\":{\"*\":{\"read\":true,\"write\":false},\"AbuFEEiuuK\":{\"read\":true,\"write\":true}},\"createdAt\":\"2020-02-29T08:14:12.146Z\",\"isClocked\":false,\"active\":true,\"lastLocationTimestamp\":1582952466921,\"deskPhone\":\"19035663081\",\"lastClockTimestamp\":1582952466921,\"lastLocation\":{\"__type\":\"GeoPoint\",\"latitude\":32.31121,\"longitude\":-95.263391},\"sessionToken\":\"r:2ca1b3fb336d8787f5f3598d1d6f2eec\",\"updatedAt\":\"2020-02-29T08:14:12.146Z\",\"objectId\":\"AbuFEEiuuK\"}","timestamp":"2020-02-29T08:14:12.903Z"}
+{"className":"_User","triggerType":"afterSave","level":"info","message":"afterSave triggered for _User for user undefined:\n  Input: {\"username\":\"test-1582964052134\",\"firstName\":\"test\",\"lastName\":\"test\",\"isClocked\":false,\"active\":true,\"lastLocationTimestamp\":1582952466921,\"deskPhone\":\"19035663081\",\"lastClockTimestamp\":1582952466921,\"lastLocation\":{\"__type\":\"GeoPoint\",\"latitude\":32.31121,\"longitude\":-95.263391},\"createdAt\":\"2020-02-29T08:14:12.146Z\",\"updatedAt\":\"2020-02-29T08:14:14.765Z\",\"ACL\":{\"*\":{\"read\":true},\"AbuFEEiuuK\":{\"read\":true,\"write\":true}},\"assetsId\":35,\"objectId\":\"AbuFEEiuuK\"}","timestamp":"2020-02-29T08:14:14.848Z"}
+{"className":"_User","triggerType":"afterSave","level":"info","message":"afterSave triggered for _User for user undefined:\n  Input: {\"username\":\"test-1582964052134\",\"firstName\":\"test\",\"lastName\":\"test\",\"isClocked\":false,\"active\":true,\"lastLocationTimestamp\":1582952466921,\"deskPhone\":\"19035663081\",\"lastClockTimestamp\":1582952466921,\"lastLocation\":{\"__type\":\"GeoPoint\",\"latitude\":32.31121,\"longitude\":-95.263391},\"createdAt\":\"2020-02-29T08:14:12.146Z\",\"updatedAt\":\"2020-02-29T08:14:14.765Z\",\"ACL\":{\"*\":{\"read\":true},\"AbuFEEiuuK\":{\"read\":true,\"write\":true}},\"assetsId\":35,\"objectId\":\"AbuFEEiuuK\"}\n  Result: {\"username\":\"test-1582964052134\",\"firstName\":\"test\",\"lastName\":\"test\",\"isClocked\":false,\"active\":true,\"lastLocationTimestamp\":1582952466921,\"deskPhone\":\"19035663081\",\"lastClockTimestamp\":1582952466921,\"lastLocation\":{\"__type\":\"GeoPoint\",\"latitude\":32.31121,\"longitude\":-95.263391},\"createdAt\":\"2020-02-29T08:14:12.146Z\",\"updatedAt\":\"2020-02-29T08:14:14.765Z\",\"ACL\":{\"*\":{\"read\":true},\"AbuFEEiuuK\":{\"read\":true,\"write\":true}},\"assetsId\":35,\"objectId\":\"AbuFEEiuuK\"}","timestamp":"2020-02-29T08:14:14.849Z"}
+{"className":"_User","triggerType":"afterSave","level":"info","message":"afterSave triggered for _User for user undefined:\n  Input: {\"username\":\"test-1582964052134\",\"firstName\":\"test\",\"lastName\":\"test\",\"ACL\":{\"*\":{\"read\":true},\"AbuFEEiuuK\":{\"read\":true,\"write\":true}},\"createdAt\":\"2020-02-29T08:14:12.146Z\",\"isClocked\":false,\"active\":true,\"lastLocationTimestamp\":1582952466921,\"deskPhone\":\"19035663081\",\"lastClockTimestamp\":1582952466921,\"lastLocation\":{\"__type\":\"GeoPoint\",\"latitude\":32.31121,\"longitude\":-95.263391},\"sessionToken\":\"r:2ca1b3fb336d8787f5f3598d1d6f2eec\",\"updatedAt\":\"2020-02-29T08:14:14.765Z\",\"assetsId\":35,\"objectId\":\"AbuFEEiuuK\"}\n  Result: {\"username\":\"test-1582964052134\",\"firstName\":\"test\",\"lastName\":\"test\",\"ACL\":{\"*\":{\"read\":true},\"AbuFEEiuuK\":{\"read\":true,\"write\":true}},\"createdAt\":\"2020-02-29T08:14:12.146Z\",\"isClocked\":false,\"active\":true,\"lastLocationTimestamp\":1582952466921,\"deskPhone\":\"19035663081\",\"lastClockTimestamp\":1582952466921,\"lastLocation\":{\"__type\":\"GeoPoint\",\"latitude\":32.31121,\"longitude\":-95.263391},\"sessionToken\":\"r:2ca1b3fb336d8787f5f3598d1d6f2eec\",\"updatedAt\":\"2020-02-29T08:14:14.765Z\",\"assetsId\":35,\"objectId\":\"AbuFEEiuuK\"}","timestamp":"2020-02-29T08:14:14.854Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T08:24:58.279Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T08:24:58.851Z"}
+{"className":"_User","triggerType":"afterSave","level":"info","message":"afterSave triggered for _User for user undefined:\n  Input: {\"username\":\"test-1582964699534\",\"firstName\":\"test\",\"lastName\":\"test\",\"ACL\":{\"*\":{\"read\":true,\"write\":false},\"vEfoGNoOUm\":{\"read\":true,\"write\":true}},\"createdAt\":\"2020-02-29T08:24:59.540Z\",\"isClocked\":false,\"active\":true,\"deskPhone\":\"19035663081\",\"lastClockTimestamp\":1582964050677,\"lastLocationTimestamp\":1582964050677,\"lastLocation\":{\"__type\":\"GeoPoint\",\"latitude\":32.31121,\"longitude\":-95.263391},\"sessionToken\":\"r:23ca60395f2b77f8fbda124f18b61700\",\"updatedAt\":\"2020-02-29T08:24:59.540Z\",\"objectId\":\"vEfoGNoOUm\"}","timestamp":"2020-02-29T08:24:59.868Z"}
+{"className":"_User","triggerType":"afterSave","level":"info","message":"afterSave triggered for _User for user undefined:\n  Input: {\"username\":\"test-1582964699534\",\"firstName\":\"test\",\"lastName\":\"test\",\"isClocked\":false,\"active\":true,\"deskPhone\":\"19035663081\",\"lastClockTimestamp\":1582964050677,\"lastLocationTimestamp\":1582964050677,\"lastLocation\":{\"__type\":\"GeoPoint\",\"latitude\":32.31121,\"longitude\":-95.263391},\"createdAt\":\"2020-02-29T08:24:59.540Z\",\"updatedAt\":\"2020-02-29T08:25:00.230Z\",\"ACL\":{\"*\":{\"read\":true},\"vEfoGNoOUm\":{\"read\":true,\"write\":true}},\"assetsId\":36,\"objectId\":\"vEfoGNoOUm\"}","timestamp":"2020-02-29T08:25:00.306Z"}
+{"className":"_User","triggerType":"afterSave","level":"info","message":"afterSave triggered for _User for user undefined:\n  Input: {\"username\":\"test-1582964699534\",\"firstName\":\"test\",\"lastName\":\"test\",\"isClocked\":false,\"active\":true,\"deskPhone\":\"19035663081\",\"lastClockTimestamp\":1582964050677,\"lastLocationTimestamp\":1582964050677,\"lastLocation\":{\"__type\":\"GeoPoint\",\"latitude\":32.31121,\"longitude\":-95.263391},\"createdAt\":\"2020-02-29T08:24:59.540Z\",\"updatedAt\":\"2020-02-29T08:25:00.230Z\",\"ACL\":{\"*\":{\"read\":true},\"vEfoGNoOUm\":{\"read\":true,\"write\":true}},\"assetsId\":36,\"objectId\":\"vEfoGNoOUm\"}\n  Result: {\"username\":\"test-1582964699534\",\"firstName\":\"test\",\"lastName\":\"test\",\"isClocked\":false,\"active\":true,\"deskPhone\":\"19035663081\",\"lastClockTimestamp\":1582964050677,\"lastLocationTimestamp\":1582964050677,\"lastLocation\":{\"__type\":\"GeoPoint\",\"latitude\":32.31121,\"longitude\":-95.263391},\"createdAt\":\"2020-02-29T08:24:59.540Z\",\"updatedAt\":\"2020-02-29T08:25:00.230Z\",\"ACL\":{\"*\":{\"read\":true},\"vEfoGNoOUm\":{\"read\":true,\"write\":true}},\"assetsId\":36,\"objectId\":\"vEfoGNoOUm\"}","timestamp":"2020-02-29T08:25:00.307Z"}
+{"className":"_User","triggerType":"afterSave","level":"info","message":"afterSave triggered for _User for user undefined:\n  Input: {\"username\":\"test-1582964699534\",\"firstName\":\"test\",\"lastName\":\"test\",\"ACL\":{\"*\":{\"read\":true},\"vEfoGNoOUm\":{\"read\":true,\"write\":true}},\"createdAt\":\"2020-02-29T08:24:59.540Z\",\"isClocked\":false,\"active\":true,\"deskPhone\":\"19035663081\",\"lastClockTimestamp\":1582964050677,\"lastLocationTimestamp\":1582964050677,\"lastLocation\":{\"__type\":\"GeoPoint\",\"latitude\":32.31121,\"longitude\":-95.263391},\"sessionToken\":\"r:23ca60395f2b77f8fbda124f18b61700\",\"updatedAt\":\"2020-02-29T08:25:00.230Z\",\"assetsId\":36,\"objectId\":\"vEfoGNoOUm\"}\n  Result: {\"username\":\"test-1582964699534\",\"firstName\":\"test\",\"lastName\":\"test\",\"ACL\":{\"*\":{\"read\":true},\"vEfoGNoOUm\":{\"read\":true,\"write\":true}},\"createdAt\":\"2020-02-29T08:24:59.540Z\",\"isClocked\":false,\"active\":true,\"deskPhone\":\"19035663081\",\"lastClockTimestamp\":1582964050677,\"lastLocationTimestamp\":1582964050677,\"lastLocation\":{\"__type\":\"GeoPoint\",\"latitude\":32.31121,\"longitude\":-95.263391},\"sessionToken\":\"r:23ca60395f2b77f8fbda124f18b61700\",\"updatedAt\":\"2020-02-29T08:25:00.230Z\",\"assetsId\":36,\"objectId\":\"vEfoGNoOUm\"}","timestamp":"2020-02-29T08:25:00.309Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T08:28:16.765Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T08:28:17.439Z"}
+{"className":"_User","triggerType":"afterSave","level":"info","message":"afterSave triggered for _User for user undefined:\n  Input: {\"username\":\"test-1582964898118\",\"firstName\":\"test\",\"lastName\":\"test\",\"ACL\":{\"*\":{\"read\":true,\"write\":false},\"VRZEAHce0E\":{\"read\":true,\"write\":true}},\"createdAt\":\"2020-02-29T08:28:18.138Z\",\"isClocked\":false,\"active\":true,\"deskPhone\":\"19035663081\",\"lastLocationTimestamp\":1582964698148,\"lastClockTimestamp\":1582964698148,\"lastLocation\":{\"__type\":\"GeoPoint\",\"latitude\":32.31121,\"longitude\":-95.263391},\"sessionToken\":\"r:0987a57bcf8c555438327465086b05e2\",\"updatedAt\":\"2020-02-29T08:28:18.138Z\",\"objectId\":\"VRZEAHce0E\"}","timestamp":"2020-02-29T08:28:18.567Z"}
+{"className":"_User","triggerType":"afterSave","level":"info","message":"afterSave triggered for _User for user undefined:\n  Input: {\"username\":\"test-1582964898118\",\"firstName\":\"test\",\"lastName\":\"test\",\"isClocked\":false,\"active\":true,\"deskPhone\":\"19035663081\",\"lastLocationTimestamp\":1582964698148,\"lastClockTimestamp\":1582964698148,\"lastLocation\":{\"__type\":\"GeoPoint\",\"latitude\":32.31121,\"longitude\":-95.263391},\"createdAt\":\"2020-02-29T08:28:18.138Z\",\"updatedAt\":\"2020-02-29T08:28:18.884Z\",\"ACL\":{\"*\":{\"read\":true},\"VRZEAHce0E\":{\"read\":true,\"write\":true}},\"assetsId\":37,\"objectId\":\"VRZEAHce0E\"}","timestamp":"2020-02-29T08:28:18.970Z"}
+{"className":"_User","triggerType":"afterSave","level":"info","message":"afterSave triggered for _User for user undefined:\n  Input: {\"username\":\"test-1582964898118\",\"firstName\":\"test\",\"lastName\":\"test\",\"isClocked\":false,\"active\":true,\"deskPhone\":\"19035663081\",\"lastLocationTimestamp\":1582964698148,\"lastClockTimestamp\":1582964698148,\"lastLocation\":{\"__type\":\"GeoPoint\",\"latitude\":32.31121,\"longitude\":-95.263391},\"createdAt\":\"2020-02-29T08:28:18.138Z\",\"updatedAt\":\"2020-02-29T08:28:18.884Z\",\"ACL\":{\"*\":{\"read\":true},\"VRZEAHce0E\":{\"read\":true,\"write\":true}},\"assetsId\":37,\"objectId\":\"VRZEAHce0E\"}\n  Result: {\"username\":\"test-1582964898118\",\"firstName\":\"test\",\"lastName\":\"test\",\"isClocked\":false,\"active\":true,\"deskPhone\":\"19035663081\",\"lastLocationTimestamp\":1582964698148,\"lastClockTimestamp\":1582964698148,\"lastLocation\":{\"__type\":\"GeoPoint\",\"latitude\":32.31121,\"longitude\":-95.263391},\"createdAt\":\"2020-02-29T08:28:18.138Z\",\"updatedAt\":\"2020-02-29T08:28:18.884Z\",\"ACL\":{\"*\":{\"read\":true},\"VRZEAHce0E\":{\"read\":true,\"write\":true}},\"assetsId\":37,\"objectId\":\"VRZEAHce0E\"}","timestamp":"2020-02-29T08:28:18.971Z"}
+{"className":"_User","triggerType":"afterSave","level":"info","message":"afterSave triggered for _User for user undefined:\n  Input: {\"username\":\"test-1582964898118\",\"firstName\":\"test\",\"lastName\":\"test\",\"ACL\":{\"*\":{\"read\":true},\"VRZEAHce0E\":{\"read\":true,\"write\":true}},\"createdAt\":\"2020-02-29T08:28:18.138Z\",\"isClocked\":false,\"active\":true,\"deskPhone\":\"19035663081\",\"lastLocationTimestamp\":1582964698148,\"lastClockTimestamp\":1582964698148,\"lastLocation\":{\"__type\":\"GeoPoint\",\"latitude\":32.31121,\"longitude\":-95.263391},\"sessionToken\":\"r:0987a57bcf8c555438327465086b05e2\",\"updatedAt\":\"2020-02-29T08:28:18.884Z\",\"assetsId\":37,\"objectId\":\"VRZEAHce0E\"}\n  Result: {\"username\":\"test-1582964898118\",\"firstName\":\"test\",\"lastName\":\"test\",\"ACL\":{\"*\":{\"read\":true},\"VRZEAHce0E\":{\"read\":true,\"write\":true}},\"createdAt\":\"2020-02-29T08:28:18.138Z\",\"isClocked\":false,\"active\":true,\"deskPhone\":\"19035663081\",\"lastLocationTimestamp\":1582964698148,\"lastClockTimestamp\":1582964698148,\"lastLocation\":{\"__type\":\"GeoPoint\",\"latitude\":32.31121,\"longitude\":-95.263391},\"sessionToken\":\"r:0987a57bcf8c555438327465086b05e2\",\"updatedAt\":\"2020-02-29T08:28:18.884Z\",\"assetsId\":37,\"objectId\":\"VRZEAHce0E\"}","timestamp":"2020-02-29T08:28:18.973Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T08:28:22.244Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T08:28:22.778Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T08:28:24.394Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T08:28:26.226Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T08:28:26.774Z"}
+{"className":"_User","triggerType":"afterSave","level":"info","message":"afterSave triggered for _User for user undefined:\n  Input: {\"username\":\"test-1582964907496\",\"firstName\":\"test\",\"lastName\":\"test\",\"ACL\":{\"*\":{\"read\":true,\"write\":false},\"gmPH4Kooyo\":{\"read\":true,\"write\":true}},\"createdAt\":\"2020-02-29T08:28:27.507Z\",\"isClocked\":false,\"active\":true,\"deskPhone\":\"19035663081\",\"lastLocationTimestamp\":1582964896661,\"lastLocation\":{\"__type\":\"GeoPoint\",\"latitude\":32.31121,\"longitude\":-95.263391},\"lastClockTimestamp\":1582964896661,\"sessionToken\":\"r:a10745aef890b3a71fc9446164105ecb\",\"updatedAt\":\"2020-02-29T08:28:27.507Z\",\"objectId\":\"gmPH4Kooyo\"}","timestamp":"2020-02-29T08:28:27.895Z"}
+{"className":"_User","triggerType":"afterSave","level":"info","message":"afterSave triggered for _User for user undefined:\n  Input: {\"username\":\"test-1582964907496\",\"firstName\":\"test\",\"lastName\":\"test\",\"isClocked\":false,\"active\":true,\"deskPhone\":\"19035663081\",\"lastLocationTimestamp\":1582964896661,\"lastLocation\":{\"__type\":\"GeoPoint\",\"latitude\":32.31121,\"longitude\":-95.263391},\"lastClockTimestamp\":1582964896661,\"createdAt\":\"2020-02-29T08:28:27.507Z\",\"updatedAt\":\"2020-02-29T08:28:28.223Z\",\"ACL\":{\"*\":{\"read\":true},\"gmPH4Kooyo\":{\"read\":true,\"write\":true}},\"assetsId\":38,\"objectId\":\"gmPH4Kooyo\"}","timestamp":"2020-02-29T08:28:28.309Z"}
+{"className":"_User","triggerType":"afterSave","level":"info","message":"afterSave triggered for _User for user undefined:\n  Input: {\"username\":\"test-1582964907496\",\"firstName\":\"test\",\"lastName\":\"test\",\"isClocked\":false,\"active\":true,\"deskPhone\":\"19035663081\",\"lastLocationTimestamp\":1582964896661,\"lastLocation\":{\"__type\":\"GeoPoint\",\"latitude\":32.31121,\"longitude\":-95.263391},\"lastClockTimestamp\":1582964896661,\"createdAt\":\"2020-02-29T08:28:27.507Z\",\"updatedAt\":\"2020-02-29T08:28:28.223Z\",\"ACL\":{\"*\":{\"read\":true},\"gmPH4Kooyo\":{\"read\":true,\"write\":true}},\"assetsId\":38,\"objectId\":\"gmPH4Kooyo\"}\n  Result: {\"username\":\"test-1582964907496\",\"firstName\":\"test\",\"lastName\":\"test\",\"isClocked\":false,\"active\":true,\"deskPhone\":\"19035663081\",\"lastLocationTimestamp\":1582964896661,\"lastLocation\":{\"__type\":\"GeoPoint\",\"latitude\":32.31121,\"longitude\":-95.263391},\"lastClockTimestamp\":1582964896661,\"createdAt\":\"2020-02-29T08:28:27.507Z\",\"updatedAt\":\"2020-02-29T08:28:28.223Z\",\"ACL\":{\"*\":{\"read\":true},\"gmPH4Kooyo\":{\"read\":true,\"write\":true}},\"assetsId\":38,\"objectId\":\"gmPH4Kooyo\"}","timestamp":"2020-02-29T08:28:28.310Z"}
+{"className":"_User","triggerType":"afterSave","level":"info","message":"afterSave triggered for _User for user undefined:\n  Input: {\"username\":\"test-1582964907496\",\"firstName\":\"test\",\"lastName\":\"test\",\"ACL\":{\"*\":{\"read\":true},\"gmPH4Kooyo\":{\"read\":true,\"write\":true}},\"createdAt\":\"2020-02-29T08:28:27.507Z\",\"isClocked\":false,\"active\":true,\"deskPhone\":\"19035663081\",\"lastLocationTimestamp\":1582964896661,\"lastLocation\":{\"__type\":\"GeoPoint\",\"latitude\":32.31121,\"longitude\":-95.263391},\"lastClockTimestamp\":1582964896661,\"sessionToken\":\"r:a10745aef890b3a71fc9446164105ecb\",\"updatedAt\":\"2020-02-29T08:28:28.223Z\",\"assetsId\":38,\"objectId\":\"gmPH4Kooyo\"}\n  Result: {\"username\":\"test-1582964907496\",\"firstName\":\"test\",\"lastName\":\"test\",\"ACL\":{\"*\":{\"read\":true},\"gmPH4Kooyo\":{\"read\":true,\"write\":true}},\"createdAt\":\"2020-02-29T08:28:27.507Z\",\"isClocked\":false,\"active\":true,\"deskPhone\":\"19035663081\",\"lastLocationTimestamp\":1582964896661,\"lastLocation\":{\"__type\":\"GeoPoint\",\"latitude\":32.31121,\"longitude\":-95.263391},\"lastClockTimestamp\":1582964896661,\"sessionToken\":\"r:a10745aef890b3a71fc9446164105ecb\",\"updatedAt\":\"2020-02-29T08:28:28.223Z\",\"assetsId\":38,\"objectId\":\"gmPH4Kooyo\"}","timestamp":"2020-02-29T08:28:28.313Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T08:28:39.730Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T08:28:40.275Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T08:29:21.734Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T08:29:22.381Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T08:29:28.866Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T08:29:29.407Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T08:35:10.593Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T08:35:11.351Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T08:37:19.996Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T08:37:20.690Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T08:39:11.137Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T08:39:11.897Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T08:40:17.611Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T08:40:18.323Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T08:47:46.003Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T08:47:46.588Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T08:47:55.883Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T08:47:56.505Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T09:16:17.411Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T09:16:18.090Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T09:16:40.410Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T09:16:40.954Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T09:17:13.185Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T09:17:13.736Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T09:17:24.690Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T09:17:25.527Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T09:17:36.259Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T09:17:36.797Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T09:18:16.600Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T09:18:17.190Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T09:20:41.928Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T09:20:42.659Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T09:21:32.960Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T09:21:33.574Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T09:33:05.760Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T09:33:35.901Z"}
+{"error":false,"operation":"PNHereNowOperation","statusCode":200,"level":"info","timestamp":"2020-02-29T09:33:36.280Z"}
+{"totalChannels":1,"totalOccupancy":1,"channels":{"general":{"occupants":[{"uuid":"Client-84jf6"}],"name":"general","occupancy":1}},"level":"info","timestamp":"2020-02-29T09:33:36.280Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T09:33:36.487Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T09:38:32.168Z"}
+{"error":false,"operation":"PNHereNowOperation","statusCode":200,"level":"info","timestamp":"2020-02-29T09:38:32.533Z"}
+{"totalChannels":1,"totalOccupancy":3,"channels":{"general":{"occupants":[{"uuid":"Console_Admin"},{"uuid":"Client-84jf6"},{"uuid":"Client-kxxiq"}],"name":"general","occupancy":3}},"level":"info","timestamp":"2020-02-29T09:38:32.533Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T09:38:32.776Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T09:39:17.305Z"}
+{"error":false,"operation":"PNHereNowOperation","statusCode":200,"level":"info","timestamp":"2020-02-29T09:39:17.682Z"}
+{"totalChannels":1,"totalOccupancy":3,"channels":{"general":{"occupants":[{"uuid":"Console_Admin"},{"uuid":"Client-kxxiq"},{"uuid":"Client-84jf6"}],"name":"general","occupancy":3}},"level":"info","timestamp":"2020-02-29T09:39:17.683Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T09:39:17.889Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T09:43:38.059Z"}
+{"level":"info","message":"/general/PNConnectedCategory/PNSubscribeOperation/0/15829689668259944/general","timestamp":"2020-02-29T09:43:38.202Z"}
+{"error":false,"operation":"PNHereNowOperation","statusCode":200,"level":"info","timestamp":"2020-02-29T09:43:38.429Z"}
+{"totalChannels":1,"totalOccupancy":3,"channels":{"general":{"occupants":[{"uuid":"Client-84jf6"},{"uuid":"Client-kxxiq"},{"uuid":"Console_Admin"}],"name":"general","occupancy":3}},"level":"info","timestamp":"2020-02-29T09:43:38.430Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T09:43:38.853Z"}
+{"level":"info","message":"join/general/4/null/1582969419","timestamp":"2020-02-29T09:43:39.789Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T09:45:06.372Z"}
+{"level":"info","message":"/general/PNConnectedCategory/PNSubscribeOperation/0/15829694197478668/general","timestamp":"2020-02-29T09:45:06.513Z"}
+{"level":"info","message":"status[object Object]","timestamp":"2020-02-29T09:45:06.706Z"}
+{"totalChannels":1,"totalOccupancy":4,"channels":{"general":{"occupants":[{"uuid":"system"},{"uuid":"Client-kxxiq"},{"uuid":"Console_Admin"},{"uuid":"Client-84jf6"}],"name":"general","occupancy":4}},"level":"info","timestamp":"2020-02-29T09:45:06.708Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T09:45:07.002Z"}
+{"level":"info","message":"leave/general/3/null/1582969603","timestamp":"2020-02-29T09:46:43.911Z"}
+{"level":"info","message":"leave/general/2/null/1582969603","timestamp":"2020-02-29T09:46:44.068Z"}
+{"level":"info","message":"join/general/3/null/1582969694","timestamp":"2020-02-29T09:48:14.989Z"}
+{"level":"info","message":"join/general/4/null/1582969714","timestamp":"2020-02-29T09:48:34.731Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T09:53:07.850Z"}
+{"level":"info","message":"/general/PNConnectedCategory/PNSubscribeOperation/0/15829697146907757/general","timestamp":"2020-02-29T09:53:07.988Z"}
+{"level":"info","message":"status[object Object]","timestamp":"2020-02-29T09:53:08.213Z"}
+{"totalChannels":1,"totalOccupancy":4,"channels":{"general":{"occupants":[{"uuid":"Client-84jf6"},{"uuid":"system"},{"uuid":"Client-kxxiq"},{"uuid":"Console_Admin"}],"name":"general","occupancy":4}},"level":"info","timestamp":"2020-02-29T09:53:08.214Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T09:53:08.489Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T09:54:37.796Z"}
+{"level":"info","message":"/general/PNConnectedCategory/PNSubscribeOperation/0/15829697146907757/general","timestamp":"2020-02-29T09:54:37.944Z"}
+{"level":"info","message":"status[object Object]","timestamp":"2020-02-29T09:54:38.161Z"}
+{"totalChannels":1,"totalOccupancy":4,"channels":{"general":{"occupants":[{"uuid":"Console_Admin"},{"uuid":"system"},{"uuid":"Client-kxxiq"},{"uuid":"Client-84jf6"}],"name":"general","occupancy":4}},"level":"info","timestamp":"2020-02-29T09:54:38.162Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T09:54:38.532Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T09:59:30.005Z"}
+{"level":"info","message":"/general/PNConnectedCategory/PNSubscribeOperation/0/15829703257234503/general","timestamp":"2020-02-29T09:59:30.155Z"}
+{"level":"info","message":"status[object Object]","timestamp":"2020-02-29T09:59:30.393Z"}
+{"totalChannels":1,"totalOccupancy":4,"channels":{"general":{"occupants":[{"uuid":"system"},{"uuid":"Client-kxxiq"},{"uuid":"Client-84jf6"},{"uuid":"Console_Admin"}],"name":"general","occupancy":4}},"level":"info","timestamp":"2020-02-29T09:59:30.394Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T09:59:30.683Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T10:04:04.238Z"}
+{"level":"info","message":"/general/PNConnectedCategory/PNSubscribeOperation/0/15829706411730302/general","timestamp":"2020-02-29T10:04:04.379Z"}
+{"level":"info","message":"status[object Object]","timestamp":"2020-02-29T10:04:04.601Z"}
+{"totalChannels":1,"totalOccupancy":3,"channels":{"general":{"occupants":[{"uuid":"Client-84jf6"},{"uuid":"Client-kxxiq"},{"uuid":"Console_Admin"}],"name":"general","occupancy":3}},"level":"info","timestamp":"2020-02-29T10:04:04.602Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T10:04:04.911Z"}
+{"level":"info","message":"join/general/4/null/1582970646","timestamp":"2020-02-29T10:04:06.355Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T10:05:04.975Z"}
+{"level":"info","message":"/general/PNConnectedCategory/PNSubscribeOperation/0/15829707019712253/general","timestamp":"2020-02-29T10:05:05.114Z"}
+{"level":"info","message":"status[object Object]","timestamp":"2020-02-29T10:05:05.347Z"}
+{"totalChannels":1,"totalOccupancy":3,"channels":{"general":{"occupants":[{"uuid":"Client-kxxiq"},{"uuid":"Console_Admin"},{"uuid":"Client-84jf6"}],"name":"general","occupancy":3}},"level":"info","timestamp":"2020-02-29T10:05:05.348Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T10:05:05.547Z"}
+{"level":"info","message":"join/general/4/null/1582970705","timestamp":"2020-02-29T10:05:06.032Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T10:05:46.629Z"}
+{"level":"info","message":"/general/PNConnectedCategory/PNSubscribeOperation/0/15829707435808760/general","timestamp":"2020-02-29T10:05:46.781Z"}
+{"level":"info","message":"status[object Object]","timestamp":"2020-02-29T10:05:47.014Z"}
+{"totalChannels":1,"totalOccupancy":3,"channels":{"general":{"occupants":[{"uuid":"Console_Admin"},{"uuid":"Client-84jf6"},{"uuid":"Client-kxxiq"}],"name":"general","occupancy":3}},"level":"info","timestamp":"2020-02-29T10:05:47.015Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T10:05:47.196Z"}
+{"level":"info","message":"join/general/4/null/1582970748","timestamp":"2020-02-29T10:05:48.737Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-02-29T10:06:56.079Z"}
+{"level":"info","message":"/general/PNConnectedCategory/PNSubscribeOperation/0/15829708134847172/general","timestamp":"2020-02-29T10:06:56.220Z"}
+{"level":"info","message":"status[object Object]","timestamp":"2020-02-29T10:06:56.445Z"}
+{"totalChannels":1,"totalOccupancy":3,"channels":{"general":{"occupants":[{"uuid":"Client-84jf6"},{"uuid":"Client-kxxiq"},{"uuid":"Console_Admin"}],"name":"general","occupancy":3}},"level":"info","timestamp":"2020-02-29T10:06:56.446Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-02-29T10:06:56.797Z"}
+{"level":"info","message":"join/general/4/null/1582970817","timestamp":"2020-02-29T10:06:57.084Z"}
+{"level":"info","message":"join/general/5/null/1582970946","timestamp":"2020-02-29T10:09:06.606Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-03-01T00:24:05.374Z"}
+{"level":"info","message":"/general/PNConnectedCategory/PNSubscribeOperation/0/15830222453771868/general","timestamp":"2020-03-01T00:24:05.522Z"}
+{"level":"info","message":"status[object Object]","timestamp":"2020-03-01T00:24:05.740Z"}
+{"totalChannels":1,"totalOccupancy":0,"channels":{"general":{"occupants":[],"name":"general","occupancy":0}},"level":"info","timestamp":"2020-03-01T00:24:05.740Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-03-01T00:24:06.136Z"}
+{"level":"info","message":"join/general/1/null/1583022247","timestamp":"2020-03-01T00:24:07.082Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-03-01T00:27:12.441Z"}
+{"level":"info","message":"/general/PNConnectedCategory/PNSubscribeOperation/0/15830224297367290/general","timestamp":"2020-03-01T00:27:12.583Z"}
+{"level":"info","message":"status[object Object]","timestamp":"2020-03-01T00:27:12.813Z"}
+{"totalChannels":1,"totalOccupancy":0,"channels":{"general":{"occupants":[],"name":"general","occupancy":0}},"level":"info","timestamp":"2020-03-01T00:27:12.814Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-03-01T00:27:13.133Z"}
+{"level":"info","message":"join/general/1/null/1583022433","timestamp":"2020-03-01T00:27:14.001Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-03-01T00:27:45.041Z"}
+{"level":"info","message":"/general/PNConnectedCategory/PNSubscribeOperation/0/15830224620804426/general","timestamp":"2020-03-01T00:27:45.194Z"}
+{"level":"info","message":"status[object Object]","timestamp":"2020-03-01T00:27:45.407Z"}
+{"totalChannels":1,"totalOccupancy":0,"channels":{"general":{"occupants":[],"name":"general","occupancy":0}},"level":"info","timestamp":"2020-03-01T00:27:45.408Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-03-01T00:27:45.669Z"}
+{"level":"info","message":"join/general/1/null/1583022465","timestamp":"2020-03-01T00:27:45.986Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-03-01T00:27:53.375Z"}
+{"level":"info","message":"/general/PNConnectedCategory/PNSubscribeOperation/0/15830224705307477/general","timestamp":"2020-03-01T00:27:53.526Z"}
+{"level":"info","message":"status[object Object]","timestamp":"2020-03-01T00:27:53.740Z"}
+{"totalChannels":1,"totalOccupancy":0,"channels":{"general":{"occupants":[],"name":"general","occupancy":0}},"level":"info","timestamp":"2020-03-01T00:27:53.741Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-03-01T00:27:53.991Z"}
+{"level":"info","message":"join/general/1/null/1583022474","timestamp":"2020-03-01T00:27:54.329Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-03-01T00:30:10.145Z"}
+{"level":"info","message":"/general/PNConnectedCategory/PNSubscribeOperation/0/15830226080044372/general","timestamp":"2020-03-01T00:30:10.301Z"}
+{"level":"info","message":"status[object Object]","timestamp":"2020-03-01T00:30:10.532Z"}
+{"totalChannels":1,"totalOccupancy":0,"channels":{"general":{"occupants":[],"name":"general","occupancy":0}},"level":"info","timestamp":"2020-03-01T00:30:10.533Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-03-01T00:30:10.919Z"}
+{"level":"info","message":"join/general/1/null/1583022611","timestamp":"2020-03-01T00:30:11.408Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-03-01T00:35:41.096Z"}
+{"level":"info","message":"/general/PNConnectedCategory/PNSubscribeOperation/0/15830229364007732/general","timestamp":"2020-03-01T00:35:41.273Z"}
+{"level":"info","message":"status[object Object]","timestamp":"2020-03-01T00:35:41.466Z"}
+{"totalChannels":1,"totalOccupancy":0,"channels":{"general":{"occupants":[],"name":"general","occupancy":0}},"level":"info","timestamp":"2020-03-01T00:35:41.467Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-03-01T00:35:41.798Z"}
+{"level":"info","message":"join/general/1/null/1583022941","timestamp":"2020-03-01T00:35:41.875Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-03-01T03:52:12.892Z"}
+{"level":"info","message":"/general/PNConnectedCategory/PNSubscribeOperation/0/15830347280537415/general","timestamp":"2020-03-01T03:52:13.048Z"}
+{"level":"info","message":"status[object Object]","timestamp":"2020-03-01T03:52:13.287Z"}
+{"totalChannels":1,"totalOccupancy":0,"channels":{"general":{"occupants":[],"name":"general","occupancy":0}},"level":"info","timestamp":"2020-03-01T03:52:13.288Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-03-01T03:52:13.654Z"}
+{"level":"info","message":"join/general/1/null/1583034734","timestamp":"2020-03-01T03:52:14.813Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-03-01T03:53:09.283Z"}
+{"level":"info","message":"/general/PNConnectedCategory/PNSubscribeOperation/0/15830347862265608/general","timestamp":"2020-03-01T03:53:09.434Z"}
+{"level":"info","message":"status[object Object]","timestamp":"2020-03-01T03:53:09.658Z"}
+{"totalChannels":1,"totalOccupancy":0,"channels":{"general":{"occupants":[],"name":"general","occupancy":0}},"level":"info","timestamp":"2020-03-01T03:53:09.660Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-03-01T03:53:09.906Z"}
+{"level":"info","message":"join/general/1/null/1583034790","timestamp":"2020-03-01T03:53:10.881Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-03-01T03:59:29.124Z"}
+{"level":"info","message":"/general/PNConnectedCategory/PNSubscribeOperation/0/15830351667162721/general","timestamp":"2020-03-01T03:59:29.281Z"}
+{"level":"info","message":"status[object Object]","timestamp":"2020-03-01T03:59:29.514Z"}
+{"totalChannels":1,"totalOccupancy":0,"channels":{"general":{"occupants":[],"name":"general","occupancy":0}},"level":"info","timestamp":"2020-03-01T03:59:29.515Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-03-01T03:59:29.793Z"}
+{"level":"info","message":"join/general/1/null/1583035170","timestamp":"2020-03-01T03:59:30.770Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-03-01T03:59:50.566Z"}
+{"level":"info","message":"/general/PNConnectedCategory/PNSubscribeOperation/0/15830351879896233/general","timestamp":"2020-03-01T03:59:50.732Z"}
+{"level":"info","message":"status[object Object]","timestamp":"2020-03-01T03:59:50.935Z"}
+{"totalChannels":1,"totalOccupancy":0,"channels":{"general":{"occupants":[],"name":"general","occupancy":0}},"level":"info","timestamp":"2020-03-01T03:59:50.936Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-03-01T03:59:51.182Z"}
+{"level":"info","message":"join/general/1/null/1583035191","timestamp":"2020-03-01T03:59:51.552Z"}

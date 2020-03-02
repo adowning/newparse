@@ -1,5 +1,16 @@
-import PubNub from 'pubnub'
+/* global Parse */
+
+// import PubNub from 'pubnub'
 import logger from 'parse-server/lib/logger'
+import {
+  // PubNub,
+  PubNubMessageData,
+  PubNubPresenceData,
+  PubNubStatusData,
+} from './pubnub.type'
+
+// eslint-disable-next-line
+const PubNub = require('pubnub')
 
 //  const  (request) => {
 
@@ -20,151 +31,175 @@ import logger from 'parse-server/lib/logger'
 //     return request.ok();
 // };
 
-export default class PubnubRouter {
-  constructor(user: Parse.Object) {
-    const pubnub = new PubNub({
-      subscribeKey: 'sub-c-3005a33c-d2fc-11e7-b07a-4e4fd9aca72d',
-      secretKey: 'pub-c-4fc6b882-3f6b-4865-acaa-fe0fa2cc74d1',
-      uuid: user.get('pubNubId'),
-      ssl: true,
-    })
-    pubnub.addListener({
-      message(m: {
-        publisher: any
-        channel?: any
-        subscription?: any
-        timetoken?: any
-        message?: any
-      }) {
-        if (m.publisher === 'system') {
-          return null
-        }
-        // handle message
-        const channelName = m.channel // The channel for which the message belongs
-        const channelGroup = m.subscription // The channel group or wildcard subscription match (if exists)
-        const pubTT = m.timetoken // Publish timetoken
-        const msg = m.message // The Payload
-        const { publisher } = m // The Publisher
-        logger.info(`${pubTT}\n${channelName}\n${msg}\n${publisher}`)
+export class PubnubHandler {
+  public pubnub = new PubNub({
+    subscribeKey: 'sub-c-f8d59532-7e01-11e8-9fa1-423cba266524',
+    publishKey: 'pub-c-60f6b0bc-29ce-4b3c-9478-aab1cf7e3815',
+    secretKey: 'sec-c-ODlhOTQ5ODEtNzJhNi00MzkwLWJkNTktNTkyMGI1YjI3NzI3',
+    // uuid: user.get('pubNubId'),
+    uuid: 'system',
+    ssl: false,
+  })
 
-        pubnub.hereNow(
-          {
-            channels: [channelName],
-            channelGroups: [channelGroup],
-            includeUUIDs: true,
-            includeState: true,
-          },
-          function(status: any, response: any) {
-            logger.info(status)
-            logger.info(response)
-            // handle status, response
-            // const userList = 	response.channels.occupants
-            // forEach(async (recipient: { uuid: any }) => {
-            // 		const query = new Parse.Query(Parse.User);
-            // 		query.equalTo("pubNubId", recipient.uuid);  // find all the women
-            // 		const user= await query.find();
-            // 		return user
-            // })
-          },
-        )
-        return null
+  // private subjectMap = new Map<string, ReplaySubject<any>>()
+
+  constructor() {
+    this.pubnub.subscribe({
+      channels: ['general'],
+      withPresence: true,
+    })
+
+    this.initializePubNub()
+  }
+
+  private initializePubNub(): void {
+    //  pubnub = new PubNub({
+    //   subscribeKey: 'sub-c-f8d59532-7e01-11e8-9fa1-423cba266524',
+    //   publishKey: 'pub-c-60f6b0bc-29ce-4b3c-9478-aab1cf7e3815',
+    //   secretKey: 'sec-c-ODlhOTQ5ODEtNzJhNi00MzkwLWJkNTktNTkyMGI1YjI3NzI3',
+    //   // uuid: user.get('pubNubId'),
+    //   uuid: 'system',
+    //   ssl: false,
+    // })
+    this.pubnub.hereNow(
+      {
+        channels: ['general'],
+        // channelGroups: [channelGroup],
+        includeUUIDs: true,
+        includeState: true,
       },
-      presence(p: {
-        channel?: any
-        subscription?: any
-        timestamp?: any
-        action?: any
-        occupancy?: any
-        state?: any
-        timetoken?: any
-        uuid?: any
-      }) {
+      function(status: any, response: any) {
+        logger.info(`status${status}`)
+        logger.info(response)
+        // handle status + '/' +  response
+        // const userList = 	response.channels.occupants
+        // forEach(async (recipient: { uuid: any }) => {
+        // 		const query = new Parse.Query(Parse.User);
+        // 		query.equalTo("pubNubId" + '/' +  recipient.uuid);  // find all the women
+        // 		const user= await query.find();
+        // 		return user
+        // })
+      },
+    )
+
+    this.pubnub.addListener({
+      message: (data: PubNubMessageData) => {
+        // const subject = this.subjectMap.get(data.channel)
+        // const subject = data.channel
+        console.log(data)
+        // return data
+      },
+      // this subject has been set certainly in this.handlePubNubChannelAndGetItsObservable().
+      // subject!.next(data.message.data)
+
+      //     message(m) {
+      //   if (m.publisher === 'system') {
+      //     return null
+      //   }
+      //   // handle message
+      //   const channelName = m.channel // The channel for which the message belongs
+      //   const channelGroup = m.subscription // The channel group or wildcard subscription match (if exists)
+      //   const pubTT = m.timetoken // Publish timetoken
+      //   const msg = m.message // The Payload
+      //   const { publisher } = m // The Publisher
+      //   logger.info(`${pubTT}/${channelName}/${msg}/${publisher}`)
+
+      presence: (p: PubNubPresenceData) => {
         // handle presence
-        const { action } = p // Can be join, leave, state-change or timeout
+        const { action } = p // Can be join + '/' +  leave + '/' +  state-change or timeout
         const channelName = p.channel // The channel for which the message belongs
         const { occupancy } = p // No. of users connected with the channel
-        const { state } = p // User State
+        // const { state } = p // User State
         const channelGroup = p.subscription //  The channel group or wildcard subscription match (if exists)
         const publishTime = p.timestamp // Publish timetoken
-        const { timetoken } = p // Current timetoken
-        const { uuid } = p // UUIDs of users who are connected with the channel
+        // const { timetoken } = p // Current timetoken
+        // const { uuid } = p // UUIDs of users who are connected with the channel
         logger.info(
-          `${action}\n${channelName}\n${occupancy}\n${state}\n${channelGroup}\n${publishTime}\n${timetoken}\n${uuid}`,
+          `${action}/${channelName}/${occupancy}/${channelGroup}/${publishTime}`,
         )
       },
-      signal(s: {
-        channel?: any
-        subscription?: any
-        timetoken?: any
-        message?: any
-        publisher?: any
-      }) {
-        // handle signal
-        const channelName = s.channel // The channel for which the signal belongs
-        const channelGroup = s.subscription // The channel group or wildcard subscription match (if exists)
-        const pubTT = s.timetoken // Publish timetoken
-        const msg = s.message // The Payload
-        const { publisher } = s // The Publisher
-        logger.info(
-          `${pubTT}\n${channelName}\n${msg}\n${publisher}\n${channelGroup}`,
-        )
-      },
-      user(userEvent: any) {
-        logger.info(userEvent)
+      // signal: (s: any) => {
+      //   // handle signal
+      //   const channelName = s.channel // The channel for which the signal belongs
+      //   const channelGroup = s.subscription // The channel group or wildcard subscription match (if exists)
+      //   const pubTT = s.timetoken // Publish timetoken
+      //   const msg = s.message // The Payload
+      //   const { publisher } = s // The Publisher
+      //   logger.info(
+      //     `${pubTT}/${channelName}/${msg}/${publisher}/${channelGroup}`,
+      //   )
+      // },
+      // user(userEvent: { toString: () => string }) {
+      //   logger.info(userEvent.toString())
 
-        // for Objects+ '\n' +  this will trigger when:
-        // . user updated
-        // . user deleted
-      },
-      space(spaceEvent: any) {
-        logger.info(spaceEvent)
+      //   // for Objects + '/' +  this will trigger when:
+      //   // . user updated
+      //   // . user deleted
+      // },
+      // space(spaceEvent: { toString: () => string }) {
+      //   logger.info(spaceEvent.toString())
 
-        // for Objects+ '\n' +  this will trigger when:
-        // . space updated
-        // . space deleted
-      },
-      membership(membershipEvent: any) {
-        logger.info(membershipEvent)
+      //   // for Objects + '/' +  this will trigger when:
+      //   // . space updated
+      //   // . space deleted
+      // },
+      // membership(membershipEvent: { toString: () => string }) {
+      //   logger.info(membershipEvent.toString())
 
-        // for Objects+ '\n' +  this will trigger when:
-        // . user added to a space
-        // . user removed from a space
-        // . membership updated on a space
-      },
-      messageAction(ma: { channel?: any; message?: any; publisher?: any }) {
-        // handle message action
-        const channelName = ma.channel // The channel for which the message belongs
-        const { publisher } = ma // The Publisher
-        const { event } = ma.message // message action added or removed
-        const { type } = ma.message.data // message action type
-        const { value } = ma.message.data // message action value
-        const { messageTimetoken } = ma.message.data // The timetoken of the original message
-        const { actionTimetoken } = ma.message.data // The timetoken of the message action
-        logger.info(
-          `${publisher}\n${channelName}\n${type}\n${event}\n${value}\n${messageTimetoken}\n${actionTimetoken}`,
-        )
-      },
-      status(s: {
-        affectedChannelGroups?: any
-        affectedChannels?: any
-        category?: any
-        operation?: any
-        lastTimetoken?: any
-        currentTimetoken?: any
-        subscribedChannels?: any
-      }) {
+      //   // for Objects + '/' +  this will trigger when:
+      //   // . user added to a space
+      //   // . user removed from a space
+      //   // . membership updated on a space
+      // },
+      // messageAction(ma: { channel?: any; message?: any; publisher?: any }) {
+      //   // handle message action
+      //   const channelName = ma.channel // The channel for which the message belongs
+      //   const { publisher } = ma // The Publisher
+      //   const { event } = ma.message // message action added or removed
+      //   const { type } = ma.message.data // message action type
+      //   const { value } = ma.message.data // message action value
+      //   const { messageTimetoken } = ma.message.data // The timetoken of the original message
+      //   const { actionTimetoken } = ma.message.data // The timetoken of the message action
+      //   logger.info(
+      //     `${publisher}/${channelName}/${type}/${event}/${value}/${messageTimetoken}/${actionTimetoken}`,
+      //   )
+      // },
+      status(s: PubNubStatusData) {
         const { affectedChannelGroups } = s // The channel groups affected in the operation
         const { affectedChannels } = s // The channels affected in the operation
         const { category } = s // Returns PNConnectedCategory
         const { operation } = s // Returns PNSubscribeOperation
-        const { lastTimetoken } = s // The last timetoken used in the subscribe request+ '\n' +  of type long.
+        const { lastTimetoken } = s // The last timetoken used in the subscribe request + '/' +  of type long.
         const { currentTimetoken } = s // The current timetoken
-        // fetched in the subscribe response+ '\n' +  which is going to be used in the next request+ '\n' +  of type long.
-        const { subscribedChannels } = s // All the current subscribed channels+ '\n' +  of type array.
+        // fetched in the subscribe response + '/' +  which is going to be used in the next request + '/' +  of type long.
+        const { subscribedChannels } = s // All the current subscribed channels + '/' +  of type array.
         logger.info(
-          `${affectedChannelGroups.toString()}\n${affectedChannels}\n${category}\n${operation}\n${lastTimetoken}\n${currentTimetoken}\n${subscribedChannels}`,
+          `${affectedChannelGroups.toString()}/${affectedChannels}/${category}/${operation}/${lastTimetoken}/${currentTimetoken}/${subscribedChannels}`,
         )
       },
     })
   }
+  // constructor() {
+  //   const pubnub = new PubNub({
+  //     subscribeKey: 'sub-c-f8d59532-7e01-11e8-9fa1-423cba266524',
+  //     publishKey: 'pub-c-60f6b0bc-29ce-4b3c-9478-aab1cf7e3815',
+  //     secretKey: 'sec-c-ODlhOTQ5ODEtNzJhNi00MzkwLWJkNTktNTkyMGI1YjI3NzI3',
+  //     // uuid: user.get('pubNubId'),
+  //     uuid: 'system',
+  //     ssl: false,
+  //   })
+  //   pubnub.addListener({
+
+  // })
 }
+
+const pubnubHandler = new PubnubHandler()
+
+Parse.Cloud.define('Pubnub_presence', async req => {
+  try {
+    console.log(pubnubHandler)
+    return null
+  } catch (e) {
+    return e.message
+  }
+})

@@ -1,0 +1,10 @@
+{"level":"info","message":"join/general/2/null/1583151235","timestamp":"2020-03-02T12:13:55.307Z"}
+{"level":"info","message":"leave/general/1/null/1583172007","timestamp":"2020-03-02T18:00:07.963Z"}
+{"level":"info","message":"join/general/2/null/1583172011","timestamp":"2020-03-02T18:00:11.824Z"}
+{"level":"info","message":"leave/general/1/null/1583182915","timestamp":"2020-03-02T21:01:56.022Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-03-02T23:04:26.788Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-03-02T23:04:26.872Z"}
+{"level":"info","message":"/general/PNConnectedCategory/PNSubscribeOperation/0/15831896066011766/general","timestamp":"2020-03-02T23:04:26.941Z"}
+{"level":"info","message":"status[object Object]","timestamp":"2020-03-02T23:04:27.187Z"}
+{"totalChannels":1,"totalOccupancy":0,"channels":{"general":{"occupants":[],"name":"general","occupancy":0}},"level":"info","timestamp":"2020-03-02T23:04:27.188Z"}
+{"level":"info","message":"join/general/1/null/1583190268","timestamp":"2020-03-02T23:04:28.208Z"}

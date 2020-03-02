@@ -1,0 +1,87 @@
+version: '3.3'
+services:
+  api:
+    image: mckaynz/parse-server:latest
+    environment:
+      APP_ID: AndrewsApp
+      CLIENT_KEY: Asdfasdf1234
+      DATABASE_URI: mongodb+srv://ash:Asdfasdf1234@cluster0-ypimu.gcp.mongodb.net/test?retryWrites=true&w=majority
+      MASTER_KEY: Asdfasdf1234
+      PUBLIC_SERVER_URL: https://api.ashdevtools.com
+      SERVER_URL: http://api
+      VIRTUAL_HOST: api.ashdevtools.com
+    ports:
+      - 1337:1337
+    networks:
+      - parse
+    logging:
+      driver: json-file
+    deploy:
+      replicas: 0
+  #  db:
+  #    image: mongo:latest
+  #    ports:
+  #     - 27017:27017
+  #    volumes:
+  #     - /data/db:/data/db
+  #    networks:
+  #     - parse
+  #    logging:
+  #      driver: json-file
+  #    deploy:
+  #      replicas: 0
+  files:
+    image: nextcloud:latest
+    environment:
+      REDIS_HOST: redis
+      S3_HOST: s3
+      SQLITE_DATABASE: db
+    ports:
+      - 8086:80
+    networks:
+      - parse
+    logging:
+      driver: json-file
+  nginx-proxy:
+    image: jwilder/nginx-proxy:latest
+    ports:
+      - 80:80
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - /data/nginx:/etc/nginx/conf.d
+    networks:
+      - default
+    logging:
+      driver: json-file
+    deploy:
+      replicas: 0
+  redis:
+    image: redis:latest
+    ports:
+      - 6379:6379
+    networks:
+      - parse
+    logging:
+      driver: json-file
+  s3:
+    image: minio/minio:latest
+    command:
+      - --compat
+      - server
+      - /data
+    environment:
+      MINIO_ACCESS_KEY: admin
+      MINIO_SECRET_KEY: Asdfasdf1234
+    ports:
+      - 9000:9009
+    volumes:
+      - /data/s3data:/data
+    networks:
+      - parse
+    logging:
+      driver: json-file
+networks:
+  default:
+    driver: overlay
+  parse:
+    external: true

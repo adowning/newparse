@@ -5,7 +5,7 @@ import { ParseServer } from 'parse-server'
 import ParseDashboard from 'parse-dashboard'
 import initClasses from './cloud/models/init'
 import initHooks from './cloud/hooks/init'
-import initTests from './cloud/tests/init'
+// import initTests from './cloud/tests/init'
 import myIp from './cloud/helpers/ipHelper'
 
 import { filesAdapter, cacheAdapter } from './adapters'
@@ -41,7 +41,7 @@ const [app, api, dashboard] = [
     serverStartComplete: async (): Promise<void> => {
       if (process.env.NODE_ENV === 'development') {
         await initHooks({ appId, serverURL, masterKey })
-        await initTests()
+        // await initTests()
       }
     },
   }),
@@ -71,6 +71,16 @@ const [app, api, dashboard] = [
 
 app.use('/api', api as Application)
 app.use('/dashboard', dashboard as Application)
+app.use('/monitor', function(req, res) {
+  res.status(204).send()
+})
+app.use('/pubnub', function(req, res) {
+  // console.log(req)
+
+  console.log(req.body)
+  console.log(req.params)
+  res.status(204).send()
+})
 
 export const App = http.createServer(app)
 export const InitClasses = async (): Promise<void> =>

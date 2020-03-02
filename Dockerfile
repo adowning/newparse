@@ -1,34 +1,60 @@
-# Build stage
-FROM node:lts-alpine as build
+FROM node:latest
 
-RUN apk update; \
-  apk add git;  \
-  apk add yarn; 
-  # apk add python2;
-WORKDIR /tmp
-COPY package*.json ./
-# RUN yarn install
-COPY . .
-RUN yarn build
+RUN mkdir parse
 
-# Release stage
-FROM node:lts-alpine as release
+ADD . /parse
+WORKDIR /parse
+RUN npm install
 
-RUN apk update; \
-  apk add git;  \
-  apk add yarn;
+ENV APP_ID setYourAppId
+ENV MASTER_KEY setYourMasterKey
+ENV DATABASE_URI setMongoDBURI
 
-WORKDIR /parse-server
+# Optional (default : 'parse/cloud/main.js')
+# ENV CLOUD_CODE_MAIN cloudCodePath
 
-COPY package*.json ./
+# Optional (default : '/parse')
+# ENV PARSE_MOUNT mountPath
 
-# RUN yarn install --production --ignore-scripts --silent
+EXPOSE 1337
 
-COPY --from=build /tmp/dist ./
+# Uncomment if you want to access cloud code outside of your container
+# A main.js file must be present, if not Parse will not start
 
-ENV PORT=1337
+# VOLUME /parse/cloud               
 
-USER node
-EXPOSE $PORT
+CMD [ "npm", "start" ]
+# # Build stage
+# FROM node:lts-alpine as build
 
-ENTRYPOINT ["node", "./server"]
+# RUN apk update; \
+#   apk add git;  \
+#   apk add yarn; 
+#   # apk add python2;
+# WORKDIR /tmp
+# COPY package*.json ./
+# # RUN yarn install
+# COPY . .
+# RUN yarn build
+
+# # Release stage
+# FROM node:lts-alpine as release
+
+# RUN apk update; \
+#   apk add git;  \
+#   apk add yarn;
+
+# WORKDIR /parse-server
+
+# COPY package*.json ./
+
+# # RUN yarn install --production --ignore-scripts --silent
+
+# COPY --from=build /tmp/dist ./
+
+# ENV PORT=1337
+
+# USER node
+# EXPOSE $PORT
+
+# ENTRYPOINT ["node", "./server"]
