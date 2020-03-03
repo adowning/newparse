@@ -69,8 +69,8 @@ export class PubnubHandler {
         includeState: true,
       },
       function(status: any, response: any) {
-        logger.info(`status${status}`)
-        logger.info(response)
+        // logger.info(`status${status}`)
+        // logger.info(response)
         // handle status + '/' +  response
         // const userList = 	response.channels.occupants
         // forEach(async (recipient: { uuid: any }) => {
@@ -86,7 +86,7 @@ export class PubnubHandler {
       message: (data: PubNubMessageData) => {
         // const subject = this.subjectMap.get(data.channel)
         // const subject = data.channel
-        console.log(data)
+        // console.log(data)
         // return data
       },
       // this subject has been set certainly in this.handlePubNubChannelAndGetItsObservable().
@@ -114,9 +114,9 @@ export class PubnubHandler {
         const publishTime = p.timestamp // Publish timetoken
         // const { timetoken } = p // Current timetoken
         // const { uuid } = p // UUIDs of users who are connected with the channel
-        logger.info(
-          `${action}/${channelName}/${occupancy}/${channelGroup}/${publishTime}`,
-        )
+        // logger.info(
+        //   `${action}/${channelName}/${occupancy}/${channelGroup}/${publishTime}`,
+        // )
       },
       // signal: (s: any) => {
       //   // handle signal
@@ -173,9 +173,9 @@ export class PubnubHandler {
         const { currentTimetoken } = s // The current timetoken
         // fetched in the subscribe response + '/' +  which is going to be used in the next request + '/' +  of type long.
         const { subscribedChannels } = s // All the current subscribed channels + '/' +  of type array.
-        logger.info(
-          `${affectedChannelGroups.toString()}/${affectedChannels}/${category}/${operation}/${lastTimetoken}/${currentTimetoken}/${subscribedChannels}`,
-        )
+        // logger.info(
+        //   `${affectedChannelGroups.toString()}/${affectedChannels}/${category}/${operation}/${lastTimetoken}/${currentTimetoken}/${subscribedChannels}`,
+        // )
       },
     })
   }

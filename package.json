@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_ENV=development nodemon --inspect src/server.ts",
+    "dev": "sed 'function beforeLogin(func?: (request: TriggerRequest) => any): void;'/a function afterLogin(func?: (request: TriggerRequest) => any): void;' ./node_modules/@types/parse/index.d.ts && NODE_ENV=development nodemon --inspect src/server.ts",
     "start": "yarn build &&  NODE_ENV=production node dist/server.js",
     "test": "jest",
     "build": "tsc"
@@ -43,7 +43,7 @@
     "node-ts": "^5.0.4",
     "parse": "^2.11.0",
     "parse-dashboard": "^2.0.5",
-    "parse-server": "https://github.com/parse-community/parse-server.git",
+    "parse-server": "4.0.2",
     "pubnub": "^4.27.3"
   },
   "resolutions": {

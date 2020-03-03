@@ -8,3 +8,23 @@
 {"level":"info","message":"status[object Object]","timestamp":"2020-03-02T23:04:27.187Z"}
 {"totalChannels":1,"totalOccupancy":0,"channels":{"general":{"occupants":[],"name":"general","occupancy":0}},"level":"info","timestamp":"2020-03-02T23:04:27.188Z"}
 {"level":"info","message":"join/general/1/null/1583190268","timestamp":"2020-03-02T23:04:28.208Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-03-03T01:32:46.805Z"}
+{"level":"info","message":"/general/PNConnectedCategory/PNSubscribeOperation/0/15831991668139229/general","timestamp":"2020-03-03T01:32:46.968Z"}
+{"level":"info","message":"status[object Object]","timestamp":"2020-03-03T01:32:47.178Z"}
+{"totalChannels":1,"totalOccupancy":0,"channels":{"general":{"occupants":[],"name":"general","occupancy":0}},"level":"info","timestamp":"2020-03-03T01:32:47.179Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-03-03T01:32:47.576Z"}
+{"level":"info","message":"join/general/1/null/1583199168","timestamp":"2020-03-03T01:32:48.480Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-03-03T01:36:47.017Z"}
+{"level":"info","message":"/general/PNConnectedCategory/PNSubscribeOperation/0/15831993995244561/general","timestamp":"2020-03-03T01:36:47.165Z"}
+{"level":"info","message":"status[object Object]","timestamp":"2020-03-03T01:36:47.383Z"}
+{"totalChannels":1,"totalOccupancy":0,"channels":{"general":{"occupants":[],"name":"general","occupancy":0}},"level":"info","timestamp":"2020-03-03T01:36:47.384Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-03-03T01:36:47.775Z"}
+{"level":"info","message":"join/general/1/null/1583199408","timestamp":"2020-03-03T01:36:48.865Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-03-03T01:38:23.987Z"}
+{"level":"info","message":"/general/PNConnectedCategory/PNSubscribeOperation/0/15831995025880092/general","timestamp":"2020-03-03T01:38:24.155Z"}
+{"level":"info","message":"status[object Object]","timestamp":"2020-03-03T01:38:24.439Z"}
+{"totalChannels":1,"totalOccupancy":0,"channels":{"general":{"occupants":[],"name":"general","occupancy":0}},"level":"info","timestamp":"2020-03-03T01:38:24.440Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-03-03T01:38:24.721Z"}
+{"level":"info","message":"join/general/1/null/1583199505","timestamp":"2020-03-03T01:38:25.651Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2020-03-03T01:39:45.560Z"}
+{"level":"info","message":"⚡️ Server listening on port 1337!","timestamp":"2020-03-03T01:39:46.217Z"}
