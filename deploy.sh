@@ -11,6 +11,7 @@ git pull
 echo 'installing'
 yarn 
 
+yarn build
 
 echo 'starting server'
 pm2 start dist/server
