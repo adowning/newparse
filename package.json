@@ -43,7 +43,7 @@
     "node-ts": "^5.0.4",
     "parse": "^2.11.0",
     "parse-dashboard": "^2.0.5",
-    "parse-server": "4.0.2",
+    "parse-server": "4.10.19",
     "pubnub": "^4.27.3"
   },
   "resolutions": {
